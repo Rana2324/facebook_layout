@@ -35,6 +35,9 @@ ul {
   background: #242526;
   padding: 0 20px;
   width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
 }
 #header .search_area {
   display: flex;
@@ -185,4 +188,140 @@ nav ul li span {
 }
 .profile_section ul li:hover {
   background-color: #77797b;
+}
+/* main section style */
+main {
+  max-width: 1464px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  background: #1c1e21;
+}
+.left_side,
+.right_side {
+  flex-basis: 330px;
+  height: 100vh;
+  padding-top: 56px;
+}
+.middle_section {
+  flex-grow: 1;
+  height: 100vh;
+  background: #3a3b3c;
+}
+.left_side {
+  padding: 75px 15px 0 15px;
+  overflow: auto;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: unset;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 25px;
+  display: none;
+}
+.left_side:hover::-webkit-scrollbar-thumb {
+  display: block;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+.left_side ul {
+  width: 100%;
+  margin-bottom: 10px;
+}
+.left_side ul li {
+  display: flex;
+  align-items: center;
+  margin: 5px 0;
+  padding: 5px;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+.left_side ul li a {
+  display: flex;
+  align-items: center;
+}
+.left_side ul li:hover {
+  background: #3a3b3c;
+}
+.left_side ul li a {
+  color: white;
+}
+.left_side ul li a img {
+  height: 28px;
+  width: 28px;
+  margin-right: 10px;
+}
+.left_side ul li:first-child a img {
+  border-radius: 50%;
+}
+.left_side ul li:last-child {
+  color: white;
+}
+.left_side ul li:last-child div {
+  height: 28px;
+  width: 28px;
+  margin-right: 10px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #3a3b3c;
+  border-radius: 50%;
+}
+.separator {
+  width: 100%;
+  height: 1px;
+  background: #3a3b3c;
+  margin-bottom: 20px;
+}
+.shortcut_title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.shortcut_title h2 {
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+  height: 40px;
+  display: flex;
+  align-items: center;
+}
+.shortcut_title button {
+  display: none;
+  background-color: unset;
+  border: none;
+  outline: none;
+  color: #6f6fe2;
+  padding: 7px;
+  border-radius: 5px;
+  transition: 0.3s;
+  font-size: 16px;
+  cursor: pointer;
+}
+.shortcut_title:hover button {
+  display: block;
+}
+.shortcut_title button:hover {
+  background: #3a3b3c;
+}
+.footer_text {
+  margin-bottom: 15px;
+}
+.footer_text a {
+  color: #b0b3b8;
+  font-size: 12px;
+}
+.footer_text a span {
+  transform: translateY(8px);
 }

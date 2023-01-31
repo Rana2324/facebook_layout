@@ -24,6 +24,9 @@
   .group {
     display: none;
   }
+  .left_side {
+    display: none;
+  }
 }
 @media (max-width: 992px) {
   nav ul li {
@@ -36,5 +39,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+  .right_side {
+    display: none;
   }
 }
