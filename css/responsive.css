@@ -43,4 +43,23 @@
   .right_side {
     display: none;
   }
+  .story_wrapper .story:nth-child(1) {
+    display: none;
+  }
+  .create_room ul li:nth-child(1) {
+    display: none;
+  }
+  /* .create_room ul li:nth-child(2) {
+    display: none;
+  } */
+  .more_room {
+    right: 48px;
+    top: 50%;
+  }
+}
+@media (max-width: 600px) {
+  .more_room {
+    right: 24px;
+    top: 50%;
+  }
 }
